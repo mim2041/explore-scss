@@ -1,0 +1,35 @@
+@use 'variables';
+
+$primary-color:blue;
+h1{
+    color:$primary-color;
+}
+p{
+    background-color:$primary-color;
+    color:white;
+    margin: 15px;
+    padding: 1px;
+    font-size: variables.$large-font;
+}
+ul{
+    border: 2px solid $primary-color;
+}
+nav{
+    ul{
+        border: 2px solid $primary-color;
+        li{
+            color:purple;
+            a{
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+button{
+    border: 1px solid red;
+    background-color: rgb(214, 179, 179);
+    &:hover{
+        background-color: purple;
+        padding: 30px;
+    }
+}
